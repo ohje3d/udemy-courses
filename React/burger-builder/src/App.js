@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
-import classes from './App.css';
+import React, {Component} from 'react';
 import BurgerBuilder from './scenes/BurgerBuilder'
+import Layout from './components/Layout'
 
 class App extends Component {
-  constructor(props) {
-    super(props)
-  }
+  // constructor(props) {
+  //   super(props)
+  // }
 
   componentWillMount() {
     console.log('componentWillMount')
@@ -13,9 +13,9 @@ class App extends Component {
 
   render () {
     return (
-        <div className={classes.App}>
-          <BurgerBuilder />
-        </div>
+      <Layout>
+        <BurgerBuilder />
+      </Layout>
     );
   }
 }

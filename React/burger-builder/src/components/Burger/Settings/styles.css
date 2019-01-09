@@ -1,0 +1,24 @@
+.settings {
+    max-width: 600px;
+}
+
+.settings-items {
+    display: flex;
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.label {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.label button {
+    width: 50px;
+}
+
+.label button:first-child {
+    margin-left: auto;
+}
