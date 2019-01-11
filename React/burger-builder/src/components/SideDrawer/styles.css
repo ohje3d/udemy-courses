@@ -1,0 +1,31 @@
+.side-drawer {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    max-width: 70%;
+    width: 280px;
+    z-index: 500;
+    background: #fff;
+    padding: 12px 20px;
+
+    transition: transform .3s ease-in-out;
+}
+
+@media (min-width: 500px) {
+    .side-drawer {
+        display: none;
+    }
+}
+
+.open {
+    transform: translateX(0);
+}
+
+.close {
+    transform: translateX(-100%);
+}
+
+.logo-wrapper {
+    height: 100px;
+}
